@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi mundo 💜</title>
+
+    <style>
+        body {
+            background-color: #17151c;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #8b5cf6;
+            padding: 25px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #bd93f9;
+        }
+
+        .contenedor {
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .tarjeta {
+            background-color: #25212e;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+
+        .foto-personal {
+            display: block;
+            width: 100%;
+            max-width: 540px;
+            max-height: 420px;
+            object-fit: cover;
+            object-position: center 40%;
+            margin: 20px auto;
+            border-radius: 12px;
+            border: 2px solid #8b5cf6;
+        }
+
+        .emoji {
+            font-size: 55px;
+        }
+
+        button {
+            background-color: #bd93f9;
+            color: #17151c;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d8b4fe;
+        }
+
+        footer {
+            padding: 20px;
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .contenedor {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>¡Hola! Soy Sebastián 💜</h1>
+        <p>Bienvenido a un pequeño rincón de mi mundo.</p>
+    </header>
+
+    <div class="contenedor">
+
+        <div class="tarjeta">
+            <div class="emoji">😎</div>
+            <h2>Sobre mí</h2>
+            <img
+                class="foto-personal"
+                src="assets/sebastian-guitarra.jpeg"
+                alt="Sebastián tocando guitarra eléctrica en un escenario"
+            >
+            <p>
+                Soy Sebastián Anaya, estudiante de Ciencia de Datos.
+                Me gusta la tecnología, aprender cosas nuevas y crear
+                proyectos interesantes. También disfruto crear música
+                de metal y experimentar con diferentes sonidos.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <div class="emoji">🎮</div>
+            <h2>Mis gustos</h2>
+            <p>🎮 Videojuegos</p>
+            <p>🤘 Crear música de metal</p>
+            <p>🎸 Explorar sonidos e ideas musicales</p>
+            <p>💻 Programación y tecnología</p>
+            <p>🎌 Anime</p>
+        </div>
+
+        <div class="tarjeta">
+            <div class="emoji">🚀</div>
+            <h2>Mis objetivos</h2>
+            <p>
+                Seguir aprendiendo sobre Ciencia de Datos, mejorar mis
+                habilidades y crear proyectos interesantes. En la música,
+                quiero seguir experimentando y desarrollando mis propias
+                ideas de metal.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h2>¿Quieres conocer un dato curioso?</h2>
+            <p id="dato">Pulsa el botón para descubrirlo. 👀</p>
+
+            <button onclick="mostrarDato()">¡Descubrir! ✨</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Hecho por Sebastián Anaya | Código 356642 💜</p>
+    </footer>
+
+    <script>
+        function mostrarDato() {
+            const datos = [
+                "La música de metal puede combinar brutalidad y melodías épicas. 🤘",
+                "La Ciencia de Datos permite descubrir patrones y encontrar respuestas. 📊",
+                "Cada canción puede comenzar con una idea pequeña. 🎸",
+                "Siempre hay algo nuevo que aprender y crear. 🚀"
+            ];
+
+            const aleatorio = Math.floor(Math.random() * datos.length);
+
+            document.getElementById("dato").textContent = datos[aleatorio];
+        }
+    </script>
+
+</body>
+</html>
