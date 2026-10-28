@@ -8,7 +8,3 @@ Página personal de Sebastián Anaya.
 - `.env`: variables de entorno locales.
 - `.gitignore`: archivos ignorados por Git.
 - `.vscode/settings.json`: configuración básica de VS Code.
-
-## Cómo abrir
-Abre la carpeta en Visual Studio Code y abre `pagina.html` en el navegador.
-Mantén la carpeta `assets` junto a `pagina.html` para que la foto se vea.
